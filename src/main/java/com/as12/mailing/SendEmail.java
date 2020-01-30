@@ -15,7 +15,7 @@ public class SendEmail {
 	    return args -> {
 	      Mail mail = new EmailBuilder()
 	    		  .From("username@gmail.com") // For gmail, this field is ignored.
-	    		  .To("zoltanrebellion@gmail.com")
+	    		  .To("username@gmail.com")
 	    		  .Template("mail-template.html")
 	    		  .AddContext("subject", "Dear Sue")
 	    		  .AddContext("content", "Hello World!")
